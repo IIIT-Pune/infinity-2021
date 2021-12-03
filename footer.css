@@ -1,0 +1,179 @@
+.footer-distributed{
+	background-color:#141614;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 55px 50px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.footer-distributed .footer-left{
+	width: 55%;
+}
+
+.footer-distributed .footer-links{
+	margin: 20px 0 12px;
+	padding: 0;
+	text-align: center;
+}
+
+.footer-distributed .footer-links a{
+	display: block;
+	line-height: 2.5;
+	font-size: 25px;
+ 	font-weight:700;
+	text-decoration: none;
+	color: #BE3A6F;
+  	padding-right: 10px;
+	transition: 0.5s;
+}
+.footer-distributed .footer-links a:hover{
+	transform: scale(1.1);
+}
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 40%;
+}
+
+.footer-distributed .footer-company-about{
+	padding: 5px 40px;
+	background-color: #ffe8e7;
+	color:  black;
+	font-weight: normal;
+	width: 80%;
+	border-radius: 5%;
+	text-align: center;
+}
+
+.footer-distributed .footer-company-about h4{
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+  	
+}
+
+.footer-distributed .footer-company-about p{
+	margin-bottom: 0px;
+	font-size: 20px;
+	text-align: justify;
+	font-weight: normal;
+}
+.footer-distributed .footer-company-about h5{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 25px;
+	text-align: center;
+	font-weight: 600;
+}
+.footer-distributed .footer-company-about .codechef-logo{
+	height: auto;
+	width: 65px;
+	margin-bottom: 25px;
+}
+#footer-contact{
+	background-color: #141614;
+}
+
+/* Footer effect */
+footer {
+  width:99.4vw;
+  background-color: #141614;
+}
+footer div {
+  margin: 5px 0px 0px 0px;
+  padding:0px;
+  color: #fff;
+  text-align:center;
+}
+footer svg {
+  width:100%;
+  overflow:hidden;
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count:infinite;
+  fill: #BE3A6F;
+}
+.drop {
+  fill: #BE3A6F;
+  animation: drop 3.2s linear infinite normal;
+  stroke: #BE3A6F;
+  stroke-width:0.5;
+  transform: translateY(25px) ;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+.drop2 {
+  animation-delay: 3s;
+  animation-duration:3s;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration:3.4s;
+}
+.drop4 {
+  animation-delay: 1.7s;
+}
+.drop5 {
+  animation-delay: 2.7s;
+  animation-duration:3.1s;
+}
+.drop6 {
+  animation-delay: -2.1s;
+  animation-duration:3.2s;
+}
+.gooeff {
+  	filter: url(#goo);
+}
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(25px);
+  }
+  30% {
+    transform: translateY(-10px) scale(.1);
+  }
+  30.001% {
+    transform: translateY(25px) scale(1);
+  }
+  70% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-10px) scale(.1);
+  }
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+
+
+@media screen and (max-width: 767px){
+	.footer-distributed{
+	  font: bold 18px;
+	}
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+	  display: block;
+	  width: 100%;
+	  margin-bottom: 40px;
+	  text-align: center;
+	}
+}
