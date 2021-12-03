@@ -1,5 +1,5 @@
 .footer-distributed{
-	background-color:#141614;
+
 	box-sizing: border-box;
 	width: 100%;
 	padding: 55px 50px;
@@ -29,8 +29,8 @@
 	font-size: 25px;
  	font-weight:700;
 	text-decoration: none;
-	color: #BE3A6F;
-  	padding-right: 10px;
+
+  	padding-right: 5px;
 	transition: 0.5s;
 }
 .footer-distributed .footer-links a:hover{
@@ -78,13 +78,13 @@
 	margin-bottom: 25px;
 }
 #footer-contact{
-	background-color: #141614;
+	
 }
 
 /* Footer effect */
 footer {
   width:99.4vw;
-  background-color: #141614;
+  
 }
 footer div {
   margin: 5px 0px 0px 0px;

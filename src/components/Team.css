@@ -34,11 +34,11 @@
   color: #bf4a70;
 }
 
-a {
+.team-a {
   all: unset;
 }
 
-a:hover {
+.team-a:hover {
   cursor: pointer;
 }
 
