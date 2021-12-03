@@ -1,0 +1,117 @@
+@media only screen and (min-width: 660px) {
+  .team-section {
+    width: 80%;
+  }
+  .header {
+    text-align: right;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .header {
+    text-align: center;
+  }
+}
+
+.team-section {
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+.header {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  font-size: 50px;
+  font-weight: 900;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+
+.header-our {
+  color: white;
+}
+.header-team {
+  color: #bf4a70;
+}
+
+.team-a {
+  all: unset;
+}
+
+.team-a:hover {
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem 1rem;
+  margin: 0 auto;
+  justify-items: center;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+.person-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+  margin: 0.5rem;
+  padding: 1.5rem 3rem;
+  gap: 0.7rem;
+  border-radius: 1rem;
+  box-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+
+.person-box-native {
+  background-color: #bf4a70;
+}
+
+.person-box-white {
+  background-color: #f9e7e8;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: inherit;
+}
+
+.icon-style {
+  background-color: inherit;
+  font-size: 30px;
+}
+
+.person-name {
+  font-size: 25px;
+  font-weight: 900;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  background-color: inherit;
+}
+
+.person-name-native {
+  color: #bf4a70;
+}
+
+.person-name-black {
+  color: black;
+}
+
+.person-work {
+  font-size: 25px;
+  font-weight: 200;
+  text-shadow: 0px 1px, 1px 0px, 1px 1px;
+  background-color: inherit;
+}
+
+.person-work-white {
+  color: rgb(235, 235, 235);
+}
+
+.person-work-black {
+  color: black;
+}
