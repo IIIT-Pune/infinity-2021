@@ -11,7 +11,7 @@ function ProblemCard(props) {
   let problemCode = props.problem.code,
     problemName = props.problem.name,
     problemLink = props.problem.link,
-    successfulSumissions = props.problem.successfulSumissions,
+    successfulSubmissions = props.problem.successfulSubmissions,
     accuracy = props.problem.accuracy;
 
   return (
@@ -40,7 +40,7 @@ function ProblemCard(props) {
             <div className="text-black font-bold">{problemName}</div>
           </a>
           <div className="text-white font-extrabold text-3xl">
-            {successfulSumissions}
+            {successfulSubmissions}
           </div>
           <div className="text-white font-bold">Successful Submissions</div>
           <div style={{ width: 120, height: 120, fontWeight: "bolder" }}>
