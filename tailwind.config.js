@@ -1,13 +1,13 @@
 module.exports = {
-	purge: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
-	darkMode: false, // or 'media' or 'class'
+	content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"], // or 'media' or 'class'
 	theme: {
 		extend: {
 			colors: {
-				pink: "#BE3A6F",
+				"pink-squid": "#BE3A6F",
 			},
 			fontFamily: {
 				montserrat: ["Montserrat", "sans-serif"],
+				squidgame: ["Squid-game", "sans-serif"],
 			},
 		},
 	},

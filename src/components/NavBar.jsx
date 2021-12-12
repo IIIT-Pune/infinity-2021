@@ -44,8 +44,7 @@ function NavBar() {
 												key={item.name}
 												href={item.href}
 												className={classNames(
-											
-													" text-gray-200 text-xs md:px-3 py-2 border-transparent md:text-sm font-bold font-montserrat tracking-wide transition duration-300 ease-in-out hover:text-pink border-b hover:border-pink"
+													" text-gray-200 text-xs md:px-3 py-2 border-transparent md:text-sm font-bold font-montserrat tracking-wide transition duration-300 ease-in-out hover:text-pink-squid border-b hover:border-pink-squid"
 												)}
 												aria-current={item.current ? "page" : undefined}
 											>
@@ -56,7 +55,7 @@ function NavBar() {
 								</div>
 							</div>
 							<div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-								<div className="bg-pink px-2 py-1 text-white font-montserrat font-semibold rounded-lg cursor-pointer">
+								<div className="bg-pink-squid px-2 py-1 text-white font-montserrat font-semibold rounded-lg cursor-pointer">
 									REGISTER NOW
 								</div>
 							</div>

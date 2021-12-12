@@ -3,7 +3,7 @@ import "./footer.css";
 function Footer() {
 	return (
 		<div>
-			<div id="footer-contact" class="footer-distributed bg-pink">
+			<div id="footer-contact" class="footer-distributed bg-pink-squid">
 				<div class="footer-left">
 					<div class="footer-company-about flex flex-col items-center">
 						<h4>InfInIty 2k21!</h4>
@@ -30,9 +30,7 @@ function Footer() {
 						<a href="#">HALL OF FAME</a>
 					</p>
 				</div>
-				
 			</div>
-            
 		</div>
 	);
 }
