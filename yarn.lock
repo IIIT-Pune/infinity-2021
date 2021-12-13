@@ -1243,6 +1243,16 @@ quick-lru@^5.1.1:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-5.1.1.tgz#366493e6b3e42a3a6885e2e99d18f80fb7a8c932"
   integrity sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA==
 
+react-card-flip@^1.1.4:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/react-card-flip/-/react-card-flip-1.1.5.tgz#bbda04b368949f3d9ee8b525c5c1e2c84b3dea90"
+  integrity sha512-cv3t8nCrO7Zqix4IT0Z9JQAul7k/WYzvnYIVUFobkjY1N3UC+5SnsASKkRt2ZOe3SHEe1fIql7Auieok6lKftg==
+
+react-circular-progressbar@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/react-circular-progressbar/-/react-circular-progressbar-2.0.4.tgz#5b04a9cf6be8c522c180e4e99ec6db63677335b0"
+  integrity sha512-OfX0ThSxRYEVGaQSt0DlXfyl5w4DbXHsXetyeivmoQrh9xA9bzVPHNf8aAhOIiwiaxX2WYWpLDB3gcpsDJ9oww==
+
 react-countdown@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/react-countdown/-/react-countdown-2.3.2.tgz#4cc27f28f2dcd47237ee66e4b9f6d2a21fc0b0ad"
