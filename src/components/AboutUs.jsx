@@ -1,9 +1,9 @@
-import mask from '../assets/front man mask tp 1.png'
+import mask from "../assets/front man mask tp 1.png";
 function AboutUs() {
-  return (
+	return (
 		<div className="p-16">
-			<div className="grid lg:grid-cols-2">
-				<div className="flex-col space-y-8">
+			<div className="flex flex-col md:flex-row">
+				<div className="flex-col space-y-8 md:w-1/2">
 					<div className="uppercase text-5xl font-black text-center md:text-left">
 						<span className="text-white">About</span>{" "}
 						<span className="text-pink-squid">Us</span>
@@ -24,7 +24,7 @@ function AboutUs() {
 						</span>
 					</div>
 				</div>
-				<div>
+				<div className="md:w-1/2">
 					<img src={mask} alt="..."></img>
 				</div>
 			</div>

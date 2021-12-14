@@ -9,8 +9,10 @@ import "./styles/tailwind.css";
 import Footer from "./components/Footer";
 import Registration from "./components/Registration";
 import Successfull from "./components/Successfull";
+import Fame from "./components/Fame";
 import { useEffect, useState } from "react";
 import Alert from "./components/Alert";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 function App() {
 	const [showAlert,SetshowAlert]=useState(false)
@@ -25,10 +27,14 @@ function App() {
 		return () => {
 			clearInterval(timer)
 		}
-	}, [showAlert])
-	return (
-		<div className="bg-black min-h-screen h-full relative">
-			<NavBar />
+	}, [showAlert]);
+	const { pathname } = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [pathname]);
+	const MainComponent = () => (
+		<div className="mt-16 scroll-smooth">
 			<Home />
 			{isSuccessfull ? (
 				<Successfull
@@ -40,6 +46,16 @@ function App() {
 			)}
 			<AboutUs />
 			<Team />
+		</div>
+	);
+	return (
+		<div className="bg-black min-h-screen h-full relative scroll-smooth ">
+			<NavBar />
+			<Routes>
+				<Route path="/archives" element={<Archive />} />
+				<Route path="/halloffame" element={<Fame />} />
+				<Route path="*" element={<MainComponent />} />
+			</Routes>
 			<Footer />
 			{showAlert && <Alert />}
 		</div>

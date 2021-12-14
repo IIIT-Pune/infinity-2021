@@ -1,11 +1,12 @@
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import LogoNav from "../assets/logo.png";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { scroller } from "react-scroll";
 const navigation = [
-	{ name: "HOME", href: "#", current: true },
-	{ name: "ARCHIVE", href: "#", current: false },
-	{ name: "HALL OF FAME", href: "#", current: false },
+	{ name: "HOME", href: "/", current: true },
+	{ name: "ARCHIVE", href: "/archives", current: false },
+	{ name: "HALL OF FAME", href: "/halloffame", current: false },
 	{ name: "LEADERBOARD", href: "#", current: false },
 	{ name: "BROCHURE", href: "#", current: false },
 ];
@@ -13,11 +14,24 @@ function classNames(...classes) {
 	return classes.filter(Boolean).join(" ");
 }
 function NavBar() {
+	const { pathname } = useLocation();
+	let navigate = useNavigate();
+	const onRegisterNow = () => {
+		if (pathname !== "/"){
+				navigate("/#registration");
+		}else{
+			scroller.scrollTo("registration", {
+				duration: 1000,
+				smooth: true,
+				offset: -20,
+			});
+		}
+	};
 	return (
-		<Disclosure as="nav">
+		<Disclosure as="nav" className="">
 			{({ open }) => (
-				<>
-					<div className="max-w-7xl mx-auto px-2 ">
+				<div className="bg-black fixed w-full z-50 top-0 ">
+					<div className=" mx-auto px-2   ">
 						<div className="relative flex items-center justify-start sm:justify-around h-16">
 							<div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
 								{/* Mobile menu button*/}
@@ -40,22 +54,25 @@ function NavBar() {
 								<div className="hidden sm:block sm:ml-6">
 									<div className="flex space-x-4">
 										{navigation.map((item) => (
-											<a
+											<Link
 												key={item.name}
-												href={item.href}
+												to={item.href}
 												className={classNames(
 													" text-gray-200 text-xs md:px-3 py-2 border-transparent md:text-sm font-bold font-montserrat tracking-wide transition duration-300 ease-in-out hover:text-pink-squid border-b hover:border-pink-squid"
 												)}
 												aria-current={item.current ? "page" : undefined}
 											>
 												{item.name}
-											</a>
+											</Link>
 										))}
 									</div>
 								</div>
 							</div>
 							<div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-								<div className="bg-pink-squid px-2 py-1 text-white font-montserrat font-semibold rounded-lg cursor-pointer">
+								<div
+									onClick={onRegisterNow}
+									className="bg-pink-squid select-none px-2 py-1 text-white font-montserrat font-semibold rounded-lg cursor-pointer focus:outline-none"
+								>
 									REGISTER NOW
 								</div>
 							</div>
@@ -82,7 +99,7 @@ function NavBar() {
 							))}
 						</div>
 					</Disclosure.Panel>
-				</>
+				</div>
 			)}
 		</Disclosure>
 	);

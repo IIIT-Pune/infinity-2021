@@ -9,12 +9,20 @@ function Successfull({ SetshowAlert, SetisSuccessfull }) {
 					console.error("Async: Could not copy text: ", err);
 				}
 			);
+		}else{
+			  const elem = document.createElement("textarea");
+				elem.value = "http://localhost:5000?ref=rakshit";
+				document.body.appendChild(elem);
+				elem.select();
+				document.execCommand("copy");
+				document.body.removeChild(elem);
+				SetshowAlert(true);
 		}
 	};
 	return (
-		<div className="h-screen px-16 py-16 flex justify-center ">
-			<div className=" h-full max-w-4xl flex flex-row rounded-lg overflow-hidden">
-				<div className="w-1/3 h-full bg-[#DDE0DC] py-10 px-2 items-center  flex flex-col ">
+		<div className="md:h-screen p-10 md:px-16 md:py-16 flex justify-center ">
+			<div className=" h-full max-w-4xl flex flex-col md:flex-row rounded-lg overflow-hidden">
+				<div className="w-full md:w-1/3 h-full bg-[#DDE0DC]  py-16 md:py-10 px-2 md:px-2 items-center  flex flex-col ">
 					<div className="text-black font-squidgame text-4xl">ThAnK YoU !!</div>
 					<div className="text-xs font-montserrat text-center font-bold text-gray-500 mt-2">
 						“We’ve Already Come Too Far To End This Now.” – Sang-Woo
@@ -55,7 +63,7 @@ function Successfull({ SetshowAlert, SetisSuccessfull }) {
 						Register Again
 					</div>
 				</div>
-				<div className="w-2/3 h-full">
+				<div className="w-2/3 h-full hidden md:inline-block">
 					<img
 						src="https://cdn.dribbble.com/users/1732596/screenshots/16680448/media/df9cfc5ffa92df985054270f81e53f08.gif"
 						alt="thanks"

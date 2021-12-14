@@ -5,7 +5,7 @@ function Footer() {
 		<div>
 			<div id="footer-contact" class="footer-distributed bg-pink-squid">
 				<div class="footer-left">
-					<div class="footer-company-about flex flex-col items-center">
+					<div class="footer-company-about flex flex-col items-center w-full">
 						<h4>InfInIty 2k21!</h4>
 						<p>
 							InfInIty is IIIT Pune's annual flagship coding contest hosted

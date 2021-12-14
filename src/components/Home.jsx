@@ -86,24 +86,24 @@ function Home() {
 		}
 	};
 	return (
-		<div className="text-white w-full  ">
-			<div className="flex items-center justify-center w-full">
+		<div className="text-white w-full  min-h-[90vh]  flex flex-col p-5">
+			<div className="flex items-center justify-center w-full mt-16 md:mt-0">
 				<img
 					src={HomeLogo}
 					alt="..."
-					className="max-w-sm md:max-w-2xl md:max-h-96"
+					className="max-w-xs md:max-w-2xl min-h-[20rem] md:max-h-96"
 				/>
 			</div>
-			<div className="font-montserrat font-bold tracking-widest antialiased w-full text-center text-xl mt-4">
+			<div className="font-montserrat font-bold tracking-widest antialiased w-full text-center text-xl mt-20 md:mt-4">
 				HOSTED ON{" "}
 				<span className="text-pink-squid font-extrabold">CODECHEF</span>
 			</div>
-			<div className="font-montserrat font-medium tracking-wide antialiased w-full text-xl mt-2 flex flex-row  items-center justify-center">
+			<div className="font-montserrat font-medium tracking-wide antialiased w-full text-xl mt-5 md:mt-2 flex flex-row  items-center justify-center">
 				<CalendarIcon className="text-pink-squid h-6 w-6 mr-1" />
 				DEC 15' 2021 <ClockIcon className="text-pink-squid h-6 w-6 ml-1 mr-1" />
 				21:00 -23:00
 			</div>
-			<div className="font-montserrat  tracking-wide antialiased w-full text-xl mt-3 flex flex-row  items-center justify-center ">
+			<div className="font-montserrat  tracking-wide antialiased w-full text-xl mt-10 md:mt-3 flex flex-row  items-center justify-center ">
 				<Countdown date={Date.now() + 100000} renderer={renderer} />
 			</div>
 		</div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import { BsSquare, BsTriangle, BsCircle } from "react-icons/bs";
 import "react-circular-progressbar/dist/styles.css";
@@ -15,10 +15,10 @@ function ProblemCard(props) {
     accuracy = props.problem.accuracy;
 
   return (
-		<div className="max-w-sm rounded bg-gradient-to-b from-archiveLight to-archiveDark h-80 w-52">
+		<div className="max-w-sm rounded bg-gradient-to-b from-archiveLight to-archiveDark h-80 w-52 ">
 			{isHidden ? (
 				<div
-					className="flex flex-col rounded gap-4 justify-center items-center m-1 bg-archiveSecondary min-w-max h-78"
+					className="flex flex-col cursor-pointer rounded gap-4 justify-center items-center m-1 bg-archiveSecondary min-w-max h-78"
 					onClick={() => {
 						setIsHidden(false);
 					}}
@@ -78,8 +78,9 @@ function ProblemSet(props) {
 }
 
 function Archive() {
+	
   return (
-    <div className="bg-black">
+    <div className="bg-black mt-16">
       <div className="flex justify-center items-center text-white text-6xl font-extrabold mt-10 mb-10">
         2<div className="text-archivePrimary">K</div>20
       </div>
