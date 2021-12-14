@@ -2,7 +2,7 @@ import "./card.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import logo from "../assets/codechef-logo.svg";
+import logo from "../assets/codechef-logo-white.png";
 function Cards() {
 	return (
 		<div className="all-cards">
