@@ -42,7 +42,7 @@ function MemberBox(props) {
 
 function Team() {
   return (
-    <div className="team-section">
+    <div className="team-section mt-16 mx-auto">
       <div className="header">
         <span className="header-our">OUR</span>{" "}
         <span className="header-team">TEAM</span>

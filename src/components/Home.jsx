@@ -1,13 +1,15 @@
-import HomeLogo from "../assets/homelogo.png";
 import { CalendarIcon, ClockIcon } from "@heroicons/react/solid";
 import { motion, AnimatePresence } from "framer-motion";
 import Countdown from "react-countdown";
 function Home() {
 	const renderer = ({ days, hours, minutes, seconds, completed }) => {
-		
 		if (completed) {
 			// Render a completed state
-			return null;
+			return (
+				<div className="bg-pink-squid px-5 py-1 rounded-lg font-bold text-center">
+					LIVE NOW
+				</div>
+			);
 		} else {
 			// Render a countdown
 			return (
@@ -89,7 +91,7 @@ function Home() {
 		<div className="text-white w-full  min-h-[90vh]  flex flex-col p-5">
 			<div className="flex items-center justify-center w-full mt-16 md:mt-0">
 				<img
-					src={HomeLogo}
+					src="https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/homelogo.png?alt=media&token=a0ca1ada-17bb-424e-9ff5-65a97bcee996"
 					alt="..."
 					className="max-w-xs md:max-w-2xl min-h-[20rem] md:max-h-96"
 				/>

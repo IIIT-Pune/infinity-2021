@@ -2,7 +2,7 @@ import "./card.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import logo from "../assets/codechef-logo-white.png";
+
 function Cards() {
 	return (
 		<div className="all-cards">
@@ -11,7 +11,10 @@ function Cards() {
 				<h2 className="sub-title">Cho Sang-Woo</h2>
 				<div className="main-content">
 					<div className="user-image">
-						<img className="user-image-content" src={logo} />
+						<img
+							className="user-image-content"
+							src="https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/codechef-logo-white.png?alt=media&token=5c96a744-410a-4c5b-9bcb-247c7f7f3f05"
+						/>
 					</div>
 					<div className="user-details">
 						<h4 className="user-name">Nishant Shah</h4>
@@ -32,7 +35,10 @@ function Cards() {
 				</div>
 				<div className="main-content">
 					<div className="user-image">
-						<img className="user-image-content" src={logo} />
+						<img
+							className="user-image-content"
+							src="https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/codechef-logo-white.png?alt=media&token=5c96a744-410a-4c5b-9bcb-247c7f7f3f05"
+						/>
 					</div>
 					<div className="user-details">
 						<h4 className="user-name">Shubham Atri</h4>
@@ -53,7 +59,10 @@ function Cards() {
 				</div>
 				<div className="main-content">
 					<div className="user-image">
-						<img className="user-image-content" src={logo} />
+						<img
+							className="user-image-content"
+							src="https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/codechef-logo-white.png?alt=media&token=5c96a744-410a-4c5b-9bcb-247c7f7f3f05"
+						/>
 					</div>
 					<div className="user-details">
 						<h4 className="user-name">Priyanshu Kumar</h4>
@@ -78,7 +87,7 @@ function Cards() {
 				<h2 className="sub-title">Seong Gi-hun</h2>
 				<div className="main-content">
 					<div className="user-image">
-						<img className="user-image-content" src={logo} />
+						<img className="user-image-content" src="https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/codechef-logo-white.png?alt=media&token=5c96a744-410a-4c5b-9bcb-247c7f7f3f05" />
 					</div>
 					<div className="user-details">
 						<h4 className="user-name">Jay Leeds</h4>
@@ -99,7 +108,7 @@ function Cards() {
 				</div>
 				<div className="main-content">
 					<div className="user-image">
-						<img className="user-image-content" src={logo} />
+						<img className="user-image-content" src="https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/codechef-logo-white.png?alt=media&token=5c96a744-410a-4c5b-9bcb-247c7f7f3f05" />
 					</div>
 					<div className="user-details">
 						<h4 className="user-name">Kang</h4>
@@ -122,7 +131,7 @@ function Cards() {
 				</div>
 				<div className="main-content">
 					<div className="user-image">
-						<img className="user-image-content" src={logo} />
+						<img className="user-image-content" src="https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/codechef-logo-white.png?alt=media&token=5c96a744-410a-4c5b-9bcb-247c7f7f3f05" />
 					</div>
 					<div className="user-details">
 						<h4 className="user-name">Himanshu Jaju</h4>
@@ -147,7 +156,7 @@ function Cards() {
 				<h2 className="sub-title">Kang Sae-Byeok</h2>
 				<div className="main-content">
 					<div className="user-image">
-						<img className="user-image-content" src={logo} />
+						<img className="user-image-content" src="https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/codechef-logo-white.png?alt=media&token=5c96a744-410a-4c5b-9bcb-247c7f7f3f05" />
 					</div>
 					<div className="user-details">
 						<h4 className="user-name">Gaurav</h4>
@@ -168,7 +177,7 @@ function Cards() {
 				</div>
 				<div className="main-content">
 					<div className="user-image">
-						<img className="user-image-content" src={logo} />
+						<img className="user-image-content" src="https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/codechef-logo-white.png?alt=media&token=5c96a744-410a-4c5b-9bcb-247c7f7f3f05" />
 					</div>
 					<div className="user-details">
 						<h4 className="user-name">Harsh Prakash</h4>
@@ -189,7 +198,7 @@ function Cards() {
 				</div>
 				<div className="main-content">
 					<div className="user-image">
-						<img className="user-image-content" src={logo} />
+						<img className="user-image-content" src="https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/codechef-logo-white.png?alt=media&token=5c96a744-410a-4c5b-9bcb-247c7f7f3f05" />
 					</div>
 					<div className="user-details">
 						<h4 className="user-name">Darshan Lokhande</h4>

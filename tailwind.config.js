@@ -16,6 +16,16 @@ module.exports = {
 				montserrat: ["Montserrat", "sans-serif"],
 				squidgame: ["Squid-game", "sans-serif"],
 			},
+			animation: {
+				wiggle: "wiggle 1.5s ease infinite",
+			},
+			keyframes: {
+				wiggle: {
+					"0%": { transform: "rotateY(-20deg)" },
+					"50%": { transform: "rotateY(20deg)" },
+					"100%": { transform: "rotateY(-20deg)" },
+				},
+			},
 		},
 	},
 	variants: {

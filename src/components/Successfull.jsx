@@ -1,7 +1,10 @@
-function Successfull({ SetshowAlert, SetisSuccessfull }) {
+import { Link } from "react-router-dom";
+
+function Successfull({ SetshowAlert, SetisSuccessfull, referalId }) {
+	const refUrl = "http://localhost:5000?ref=" + referalId.current;
 	const handleCopy = () => {
 		if (navigator.clipboard) {
-			navigator.clipboard.writeText("http://localhost:5000?ref=rakshit").then(
+			navigator.clipboard.writeText(refUrl).then(
 				function () {
 					SetshowAlert(true);
 				},
@@ -9,14 +12,14 @@ function Successfull({ SetshowAlert, SetisSuccessfull }) {
 					console.error("Async: Could not copy text: ", err);
 				}
 			);
-		}else{
-			  const elem = document.createElement("textarea");
-				elem.value = "http://localhost:5000?ref=rakshit";
-				document.body.appendChild(elem);
-				elem.select();
-				document.execCommand("copy");
-				document.body.removeChild(elem);
-				SetshowAlert(true);
+		} else {
+			const elem = document.createElement("textarea");
+			elem.value = refUrl;
+			document.body.appendChild(elem);
+			elem.select();
+			document.execCommand("copy");
+			document.body.removeChild(elem);
+			SetshowAlert(true);
 		}
 	};
 	return (
@@ -33,7 +36,7 @@ function Successfull({ SetshowAlert, SetisSuccessfull }) {
 					<div className="flex rounded-lg overflow-hidden justify-center mt-2">
 						<input
 							className="bg-[#7C8975]  py-2 px-2 font-semibold cursor-text"
-							value={"http://localhost:5000?ref=rakshit"}
+							value={refUrl}
 							disabled={true}
 						></input>
 						<div
@@ -56,10 +59,15 @@ function Successfull({ SetshowAlert, SetisSuccessfull }) {
 							</svg>
 						</div>
 					</div>
-					<div className="border-2 border-black w-64 cursor-pointer mt-16 rounded-full py-1 text-center font-montserrat text-sm font-extrabold">
-						Practice
-					</div>
-					<div className="border-2 border-black w-64 cursor-pointer mt-2 rounded-full py-1 text-center font-montserrat text-sm font-extrabold" onClick={()=>SetisSuccessfull(false)}>
+					<Link to="/archives">
+						<div className="border-2 border-black w-64 cursor-pointer mt-16 rounded-full py-1 text-center font-montserrat text-sm font-extrabold">
+							Practice
+						</div>
+					</Link>
+					<div
+						className="border-2 border-black w-64 cursor-pointer mt-2 rounded-full py-1 text-center font-montserrat text-sm font-extrabold"
+						onClick={() => SetisSuccessfull(false)}
+					>
 						Register Again
 					</div>
 				</div>

@@ -4,7 +4,8 @@ import { BsSquare, BsTriangle, BsCircle } from "react-icons/bs";
 import "react-circular-progressbar/dist/styles.css";
 import "../styles/tailwind.css";
 import problemSet from "../data/ProblemSet";
-import CodeChefLogo from "../assets/codechef.png";
+const CodeChefLogo =
+	"https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/codechef.png?alt=media&token=f4fea23c-b414-4060-8099-ff2cf780866d";
 
 function ProblemCard(props) {
   const [isHidden, setIsHidden] = useState(true);

@@ -1,4 +1,4 @@
-import mask from "../assets/front man mask tp 1.png";
+const mask = "https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/front%20man%20mask%20tp%201.png?alt=media&token=ca48f8fc-1bd7-4930-bd30-e4c4fd9c7d8f";
 function AboutUs() {
 	return (
 		<div className="p-16">
@@ -24,7 +24,7 @@ function AboutUs() {
 						</span>
 					</div>
 				</div>
-				<div className="md:w-1/2">
+				<div className="md:w-1/2 ">
 					<img src={mask} alt="..."></img>
 				</div>
 			</div>
