@@ -1,10 +1,19 @@
 import "./Team.css";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import TeamMembers from "../data/TeamMembers";
+import { motion } from "framer-motion";
 
 function MemberBox(props) {
   return (
-		<div
+		<motion.div
+			initial={{rotate:180, scale: 0 }}
+			animate={{ rotate: 0, scale: 1 }}
+			transition={{
+				type: "spring",
+				stiffness: 260,
+				damping: 20,
+				duration:0.5
+			}}
 			className={
 				"person-box " + (props.val ? "person-box-native" : "person-box-white")
 			}
@@ -36,7 +45,7 @@ function MemberBox(props) {
 			>
 				{props.data.work}
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 

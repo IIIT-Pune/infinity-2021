@@ -29,7 +29,7 @@ function AboutUs() {
 					</div>
 				</div>
 				<motion.div className="md:w-1/2 max-h-[28rem] ">
-					<div className="text-gray-500 w-full text-center font-squidgame text-xs">TRY ME!</div>
+					<div className="text-gray-500 w-full text-center font-squidgame text-xs">TRY ME! FRONT MAN HERE</div>
 					<motion.img
 						src={mask}
 						alt="..."
