@@ -35,11 +35,18 @@ const TeamMembers = [
 		instagram: "https://www.instagram.com/nishitsharma03/",
 	},
 	{
-		name: "Reyaan",
+		name: "Reyaan Jagnani",
 		work: "Problem Setter",
 		github: "https://github.com/reyaan44",
 		linkedin: "https://www.linkedin.com/in/reyaan-jagnani-b20ba4205/",
 		instagram: "https://www.instagram.com/reyaan_44/",
+	},
+	{
+		name: "Sahil Tiwari",
+		work: "Problem Setter",
+		github: "#",
+		linkedin: "https://www.linkedin.com/in/tiwarisahil585",
+		instagram: "#",
 	},
 	{
 		name: "Aman Singhal",
