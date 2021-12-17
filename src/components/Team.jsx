@@ -10,13 +10,13 @@ function MemberBox(props) {
 			}
 		>
 			<div className="icons">
-				<a href={props.data.github} className="team-a">
+				<a href={props.data.github} className="team-a" target="_blank">
 					<FaGithub className="icon-style" />
 				</a>
-				<a href={props.data.instagram} className="team-a">
+				<a href={props.data.instagram} className="team-a" target="_blank">
 					<FaInstagram className="icon-style" />
 				</a>
-				<a href={props.data.linkedin} className="team-a">
+				<a href={props.data.linkedin} className="team-a" target="_blank">
 					<FaLinkedin className="icon-style" />
 				</a>
 			</div>

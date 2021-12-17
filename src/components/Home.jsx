@@ -1,5 +1,5 @@
 import { CalendarIcon, ClockIcon } from "@heroicons/react/solid";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Countdown from "react-countdown";
 function Home() {
 	const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -13,10 +13,10 @@ function Home() {
 		} else {
 			// Render a countdown
 			return (
-				<AnimatePresence>
+				
 					<div className="bg-pink-squid px-5 py-1 rounded-lg font-bold flex flex-row">
 						<div className="flex flex-col items-center">
-							<motion.div
+							<div
 								key={days}
 								initial={{ opacity: 0 }}
 								animate={{ opacity: 1 }}
@@ -26,7 +26,7 @@ function Home() {
 								}}
 							>
 								{days}
-							</motion.div>
+							</div>
 							<div className="text-black text-xs font-mono tracking-tighter uppercase">
 								DayS
 							</div>
@@ -83,7 +83,6 @@ function Home() {
 							</div>
 						</div>
 					</div>
-				</AnimatePresence>
 			);
 		}
 	};
@@ -91,7 +90,7 @@ function Home() {
 		<div className="text-white w-full  min-h-[90vh]  flex flex-col p-5">
 			<div className="flex items-center justify-center w-full mt-16 md:mt-0">
 				<img
-					src="https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/homelogo.png?alt=media&token=a0ca1ada-17bb-424e-9ff5-65a97bcee996"
+					src="https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/homelogo.webp?alt=media&token=cfba3b3a-2a98-4345-bb3d-b2faf1a02687"
 					alt="..."
 					className="max-w-xs md:max-w-2xl min-h-[20rem] md:max-h-96"
 				/>

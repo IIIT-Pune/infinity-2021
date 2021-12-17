@@ -3,9 +3,9 @@ import "./footer.css";
 function Footer() {
 	return (
 		<div>
-			<div id="footer-contact" class="footer-distributed bg-pink-squid">
-				<div class="footer-left">
-					<div class="footer-company-about flex flex-col items-center w-full">
+			<div id="footer-contact" className="footer-distributed bg-pink-squid">
+				<div className="footer-left">
+					<div className="footer-company-about flex flex-col items-center w-full">
 						<h4>InfInIty 2k21!</h4>
 						<p>
 							InfInIty is IIIT Pune's annual flagship coding contest hosted
@@ -16,13 +16,13 @@ function Footer() {
 						<h5>Email: infinity@iiitp.ac.in</h5>
 						<img
 							src={CodechefLogo}
-							class="codechef-logo "
+							className="codechef-logo "
 							alt="codechef-logo"
 						/>
 					</div>
 				</div>
-				<div class="footer-right">
-					<p class="footer-links text-white">
+				<div className="footer-right">
+					<p className="footer-links text-white">
 						<a href="#">HOME</a>
 						<a href="#">REGISTRATION</a>
 						<a href="#">LEADERBOARD</a>

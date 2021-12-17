@@ -1,7 +1,22 @@
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Alert from "./Alert";
 
-function Successfull({ SetshowAlert, SetisSuccessfull, referalId }) {
-	const refUrl = "http://localhost:5000?ref=" + referalId.current;
+function Successfull({ SetisSuccessfull, referalId }) {
+	const [showAlert, SetshowAlert] = useState(false);
+	const refUrl = "https://infinity.iiitp.ac.in/?ref=" + referalId.current;
+	useEffect(() => {
+		let timer;
+		if (showAlert) {
+			timer = setInterval(() => {
+				SetshowAlert(false);
+			}, 3000);
+		}
+		return () => {
+			clearInterval(timer);
+		};
+	}, [showAlert]);
 	const handleCopy = () => {
 		if (navigator.clipboard) {
 			navigator.clipboard.writeText(refUrl).then(
@@ -23,7 +38,13 @@ function Successfull({ SetshowAlert, SetisSuccessfull, referalId }) {
 		}
 	};
 	return (
-		<div className="md:h-screen p-10 md:px-16 md:py-16 flex justify-center ">
+		<motion.div
+			initial={{ scaleX: 0.1 }}
+			animate={{ scaleX: 1 }}
+			exit={{ scaleX: 0 }}
+			transition={{ duration: 0.8 }}
+			className="md:h-screen p-10 md:px-16 md:py-16 flex justify-center "
+		>
 			<div className=" h-full max-w-4xl flex flex-col md:flex-row rounded-lg overflow-hidden">
 				<div className="w-full md:w-1/3 h-full bg-[#DDE0DC]  py-16 md:py-10 px-2 md:px-2 items-center  flex flex-col ">
 					<div className="text-black font-squidgame text-4xl">ThAnK YoU !!</div>
@@ -45,24 +66,27 @@ function Successfull({ SetshowAlert, SetisSuccessfull, referalId }) {
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								class="h-6 w-6"
+								className="h-6 w-6"
 								fill="none"
 								viewBox="0 0 24 24"
 								stroke="currentColor"
 							>
 								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth="2"
 									d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"
 								/>
 							</svg>
 						</div>
 					</div>
-					<Link to="/archives">
-						<div className="border-2 border-black w-64 cursor-pointer mt-16 rounded-full py-1 text-center font-montserrat text-sm font-extrabold">
+					<Link
+					
+						to="/archives"
+						className="border-2 border-black w-64 cursor-pointer mt-16 rounded-full py-1 text-center font-montserrat text-sm font-extrabold"
+					>
+						
 							Practice
-						</div>
 					</Link>
 					<div
 						className="border-2 border-black w-64 cursor-pointer mt-2 rounded-full py-1 text-center font-montserrat text-sm font-extrabold"
@@ -79,7 +103,8 @@ function Successfull({ SetshowAlert, SetisSuccessfull, referalId }) {
 					/>
 				</div>
 			</div>
-		</div>
+			{showAlert && <Alert />}
+		</motion.div>
 	);
 }
 

@@ -37,7 +37,6 @@ function Registration({ SetisSuccessfull, referalId }) {
 		event.preventDefault();
 		let flag = true;
 		Object.values(error).forEach((obj) => {
-			console.log(obj);
 			if (obj !== "") {
 				flag = false;
 				return;
@@ -64,9 +63,8 @@ function Registration({ SetisSuccessfull, referalId }) {
 		})
 			.then((res) => {
 				referalId.current = res.key;
-					SetisLoading(false);
+				SetisLoading(false);
 				SetisSuccessfull(true);
-			
 			})
 			.catch((err) => {
 				console.log(err);
@@ -115,7 +113,7 @@ function Registration({ SetisSuccessfull, referalId }) {
 							<div className="absolute right-2 top-3 group ">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									class="h-4 w-4"
+									className="h-4 w-4"
 									viewBox="0 0 20 20"
 									fill="#BE3A6F"
 								>
@@ -156,7 +154,7 @@ function Registration({ SetisSuccessfull, referalId }) {
 							<div className="absolute right-2 top-3 group ">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									class="h-4 w-4"
+									className="h-4 w-4"
 									viewBox="0 0 20 20"
 									fill="#BE3A6F"
 								>
@@ -200,7 +198,7 @@ function Registration({ SetisSuccessfull, referalId }) {
 							<div className="absolute right-2 top-3 group ">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									class="h-4 w-4"
+									className="h-4 w-4"
 									viewBox="0 0 20 20"
 									fill="#BE3A6F"
 								>
@@ -243,7 +241,7 @@ function Registration({ SetisSuccessfull, referalId }) {
 							<div className="absolute right-2 top-3 group ">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									class="h-4 w-4"
+									className="h-4 w-4"
 									viewBox="0 0 20 20"
 									fill="#BE3A6F"
 								>
@@ -280,18 +278,18 @@ function Registration({ SetisSuccessfull, referalId }) {
 								}
 							}}
 						>
-							<option value="" disabled selected>
-								Country
-							</option>
-							{countryList.map((obj) => (
-								<option value={obj}>{obj}</option>
+							<option value="">Country</option>
+							{countryList.map((obj, i) => (
+								<option value={obj} key={i}>
+									{obj}
+								</option>
 							))}
 						</select>
 						{error.country !== "" && (
 							<div className="absolute right-2 top-3 group ">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									class="h-4 w-4"
+									className="h-4 w-4"
 									viewBox="0 0 20 20"
 									fill="#BE3A6F"
 								>
@@ -302,18 +300,18 @@ function Registration({ SetisSuccessfull, referalId }) {
 								</div>
 							</div>
 						)}
-						<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+						<div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								class="h-4 w-4"
+								className="h-4 w-4"
 								fill="none"
 								viewBox="0 0 24 24"
 								stroke="currentColor"
 							>
 								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth="2"
 									d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
 								/>
 							</svg>
@@ -348,7 +346,7 @@ function Registration({ SetisSuccessfull, referalId }) {
 							<div className="absolute right-2 top-3 group ">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									class="h-4 w-4"
+									className="h-4 w-4"
 									viewBox="0 0 20 20"
 									fill="#BE3A6F"
 								>
@@ -384,7 +382,7 @@ function Registration({ SetisSuccessfull, referalId }) {
 						loop
 						autoPlay
 						muted={ismuted}
-						src="https://cdn.dribbble.com/users/1374371/screenshots/16614312/media/bea23a76aff9f3a64ca027092043fecf.mp4"
+						src="https://firebasestorage.googleapis.com/v0/b/infinity-2k20.appspot.com/o/pink_soldier.mp4?alt=media&token=02a62e8b-4e67-4f2d-a851-fa59caa12d4e"
 					></video>
 					<div className="hidden group-hover:inline-block absolute right-[35%] top-[40%] bg-gray-200 rounded-full p-5 opacity-70 ">
 						{ismuted ? (
