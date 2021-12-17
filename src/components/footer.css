@@ -2,7 +2,7 @@
 
 	box-sizing: border-box;
 	width: 100%;
-	padding: 55px 50px;
+	
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -10,7 +10,9 @@
 .footer-distributed .footer-right{
 	display: inline-block;
 	vertical-align: top;
+	
 }
+
 
 
 .footer-distributed .footer-left{
@@ -18,7 +20,7 @@
 }
 
 .footer-distributed .footer-links{
-	margin: 20px 0 12px;
+	
 	padding: 0;
 	text-align: center;
 }
@@ -26,7 +28,7 @@
 .footer-distributed .footer-links a{
 	display: block;
 	line-height: 2.5;
-	font-size: 25px;
+	font-size: 20px;
  	font-weight:700;
 	text-decoration: none;
 
@@ -43,57 +45,46 @@
 }
 
 .footer-distributed .footer-company-about{
-	padding: 5px 40px;
 	background-color: #ffe8e7;
-	color:  black;
 	font-weight: normal;
-	width: 100%;
 	border-radius: 20px;
 	text-align: center;
 }
 
 .footer-distributed .footer-company-about h4{
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: bold;
-	margin-bottom: 20px;
+
   	
 }
 
 .footer-distributed .footer-company-about p{
-	margin-bottom: 0px;
+
 	font-size: 20px;
 	text-align: justify;
 	font-weight: normal;
 }
 .footer-distributed .footer-company-about h5{
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-size: 25px;
+
+	font-size: 20px;
 	text-align: center;
 	font-weight: 600;
 }
 .footer-distributed .footer-company-about .codechef-logo{
-	height: auto;
-	width: 65px;
-	margin-bottom: 25px;
+
 }
 #footer-contact{
 	
 }
 
 /* Footer effect */
-footer {
-  width:99.4vw;
-  
-}
+
 footer div {
-  margin: 5px 0px 0px 0px;
-  padding:0px;
   color: #fff;
   text-align:center;
 }
 footer svg {
-  width:100%;
+
   overflow:hidden;
 }
 
