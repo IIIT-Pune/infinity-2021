@@ -11,6 +11,7 @@ import Successfull from "./components/Successfull";
 import Fame from "./components/Fame";
 import { useEffect, useRef, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
+import Feedback from "./components/Feedback";
 
 function App() {
 	const [showAlert, SetshowAlert] = useState(false);

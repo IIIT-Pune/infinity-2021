@@ -1,4 +1,5 @@
 import CodechefLogo from "../assets/codechef-logo.svg";
+import Feedback from "./Feedback";
 import "./footer.css";
 function Footer() {
 	return (
@@ -7,12 +8,7 @@ function Footer() {
 				<div className="footer-left">
 					<div className="footer-company-about flex flex-col items-center w-full">
 						<h4>InfInIty 2k21!</h4>
-						<p>
-							InfInIty is IIIT Pune's annual flagship coding contest hosted
-							every year on CodeChef. A 3 hour coding contest that's guaranteed
-							to get your head itching and your heart wanting more. InfInIty
-							started in 2017 and was limited to only IIIT Pune students.
-						</p>
+						<Feedback/>
 						<h5>Email: infinity@iiitp.ac.in</h5>
 						<img
 							src={CodechefLogo}
@@ -29,6 +25,9 @@ function Footer() {
 						<a href="#">ARCHIVES</a>
 						<a href="#">HALL OF FAME</a>
 					</p>
+				</div>
+				<div style = {{color: "white", marginTop: "10px", marginLeft: "10px"}}>
+					© Copyright {new Date().getFullYear()} | Infinity, IIIT Pune
 				</div>
 			</div>
 		</div>
