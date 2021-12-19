@@ -86,6 +86,12 @@
 }
 
 .person-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: fit-content;
   font-size: 20px;
   font-weight: 700;
   text-shadow: 0px 1px, 1px 0px, 1px 1px;

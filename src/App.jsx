@@ -12,6 +12,7 @@ import Fame from "./components/Fame";
 import { useEffect, useRef, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Feedback from "./components/Feedback";
+import Prizes from "./components/Prizes";
 
 function App() {
 	const [showAlert, SetshowAlert] = useState(false);
@@ -61,6 +62,7 @@ function App() {
 					referalId={referalId}
 				/>
 			)}
+			<Prizes/>
 			<AboutUs />
 		</div>
 	);

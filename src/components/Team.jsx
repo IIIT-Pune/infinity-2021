@@ -35,7 +35,8 @@ function MemberBox(props) {
 					(props.val ? "person-name-black" : "person-name-native")
 				}
 			>
-				{props.data.name.toUpperCase()}
+				<div>{props.data.name.toUpperCase().split(" ")[0]}&nbsp;</div>
+				<div>{props.data.name.toUpperCase().split(" ")[1]}</div>
 			</div>
 			<div
 				className={
