@@ -29,7 +29,7 @@ const TeamMembers = [
 	},
 	{
 		name: "Nishit Sharma",
-		work: "Contest Admin",
+		work: "Problem Setter",
 		github: " https://github.com/nishitsharma03",
 		linkedin: "https://www.linkedin.com/in/nishit-sharma-146961197/",
 		instagram: "https://www.instagram.com/nishitsharma03/",
